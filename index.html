@@ -300,6 +300,26 @@
             font-size: 14px;
             margin-top: 40px;
         }
+        /* ↓↓↓ここから下を追加↓↓↓ */
+        /* 🏀 追加：背景画像の設定 */
+        .home-hero-image {
+            width: 100%;
+            height: 300px;
+            background-image: url('images/main-visual.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 600px) {
+            .home-hero-image {
+                height: 200px;
+            }
+        }
+        /* ↑↑↑ここから上を追加↑↑↑ */
     </style>
 </head>
 
@@ -337,7 +357,7 @@
             <h2>あの日終われなかった試合を、熱狂を、もう一度。</h2>
             <p>未完の青春に、決着。</p>
             <p>あの頃、一つのボールを追いかけ、本気で戦っていた仲間たち。そして、しのぎを削ったライバルたち。もう一度あの時と同じ熱量で、コートで激しくぶつかり合える場所を作りました。川口出身のプレイヤーが集い、あの日失った「真剣勝負」を取り戻すためのリベンジマッチです。</p>
-            <img src="images/main-visual.jpg" alt="リバイバルカップ メインビジュアル" class="main-image">
+            <div class="home-hero-image"></div>
         </section>
 
         <!-- 2. 申し込みセクション -->
